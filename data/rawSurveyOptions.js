@@ -160,3 +160,5 @@ const rawSurveyOptions = [
 
     }
 ];
+
+export default rawSurveyOptions;
