@@ -1,27 +1,97 @@
 import rawSurveyOptions from '../data/rawSurveyOptions.js';
-import { randomSelect } from '../utilities/utilities.js';
 import { generateChoices } from '../survey-page/generate-choices.js';
 
-// const option1 = document.getElementById('option1');
-// const option2 = document.getElementById('option2');
-// const option3 = document.getElementById('option3');
-
-// const image1 = document.getElementById('image1');
-// const image2 = document.getElementById('image2');
-// const image3 = document.getElementById('image3');
-
 const selectButton = document.getElementById('select-button');
-
-generateChoices();
-
-// let i = randomSelect();
-// image1.src = rawSurveyOptions[i].image;
-// i = randomSelect();
-// image2.src = rawSurveyOptions[i].image;
-// i = randomSelect();
-// image3.src = rawSurveyOptions[i].image;
+// let questions = 0;
+const resultsArray = [];
+const stringyResultsArray = JSON.stringify(resultsArray);
+localStorage.setItem('RESULTS', stringyResultsArray);
 
 
+generateChoices(rawSurveyOptions);
+
+// while (questions < 25) {
+        // selectButton.addEventListener('click', () => {
+        // questions++;
+        // });
+
+
+// }
+// generateChoices(arrayClone);
+// selectButton.addEventListener('click', () => {
+
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// generateChoices(arrayClone);
+// selectButton.addEventListener('click', () => {
+//         const selection = document.querySelector('input:checked');
+//         // arrayClone[0].timesChosen++;
+//         arrayClone.forEach((element) => {
+//         if (element.id === selection.value) {
+//                         element.timesChosen++;
+//                 }
+//         })
+//         // let stringyArray = JSON.stringify(arrayClone);
+//         // localStorage.setItem('CURRENT-USER-DATA', stringyArray);
+//         // questions--;
+//         // location.reload();
+
+//         let stringyArray = JSON.stringify(arrayClone);
+//         localStorage.setItem('CURRENT-USER-DATA', stringyArray);
+//         location.reload();
+// });
+
+        // selectButton.addEventListener('click', () => {
+        //         const selection = document.querySelector('input[type=radio]:checked');
+        //         arrayClone.forEach((element) => {
+        //         if (element.id === selection.value) {
+        //                 element.timesChosen++;
+        //         }
+        //         questions--;
+        //         });
+        // });
+
+
+
+
+// selectButton.addEventListener('click', () => {
+//     // radio button selector
+//     const selection = document.querySelector('input[type=radio]:checked');
+
+//     let userSelection = selection.value;
+    
+// });
 
 // generateChoices
 
