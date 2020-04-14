@@ -16,11 +16,11 @@ export const generateChoices = () => {
     for (let i = 0; i < 3; i++) {
         let number = randomSelect();
         if (checkIfUsed(number, choices) === true) {
+            i--;
             console.log('I am here!');
-            break;
+        } else {
+            images[i].src = rawSurveyOptions[number].image;
+            choices.push(number);
         }
-        images[i].src = rawSurveyOptions[number].image;
-        choices.push(number);
     }
-    console.log(choices);
 };
