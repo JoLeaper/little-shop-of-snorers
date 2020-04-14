@@ -1,12 +1,16 @@
-.options-container {
-
+body {
+    text-align: center;
 }
+
+/* .options-container {
+
+} */
 
 .options-container img{
     width: 300px;
     height: 300px;
 }
 
-.next-button-container{
+/* .next-button-container{
 
-}
+} */

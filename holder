@@ -1,0 +1,28 @@
+export const generateChoices = (array) => {
+    let stringyChoices = localStorage.getItem('NO-DUPS');
+    let parsedChoices = JSON.parse(stringyChoices);
+    for (let i = 0; i < 3; i++) {
+        let number = randomSelect();
+        if (checkIfUsed(number, parsedChoices) === true) {
+            i--;
+        } else {
+            addToResult(array[number]);
+            options[i].value = array[number].name;
+            images[i].src = array[number].image;
+            parsedChoices.push(number);
+        }
+        let alreadySelectedOptions = JSON.stringify(parsedChoices);
+        localStorage.setItem('NO-DUPS', alreadySelectedOptions);
+    }
+};
+
+
+export const checkIfUsed = (number, array) => {
+    let used = false;
+    array.forEach((numInArray) => {
+        if (number === numInArray) {
+            used = true;
+        }
+    });
+    return used;
+};
