@@ -2,9 +2,9 @@ export const renderLine = (resultObject) => {
     const tr = document.createElement('tr');
     const itemName = document.createElement('td');
     const timesSeen = document.createElement('td');
-    const totalTimesSeen = document.createElement('td');
+    // const totalTimesSeen = document.createElement('td');
     const timesSelected = document.createElement('td');
-    const totalTimesSelected = document.createElement('td');
+    // const totalTimesSelected = document.createElement('td');
 
     // let totalsArray = [];
 
