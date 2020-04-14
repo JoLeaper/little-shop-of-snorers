@@ -15,7 +15,7 @@ export const addToResult = (object) => {
         const newResult = {
             name: object.name,
             numAppearances: 1,
-            numSelected: 0
+            numSelected: 0,
         };
         parsedResultsArray.push(newResult);
     }

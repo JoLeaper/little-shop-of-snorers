@@ -14,7 +14,8 @@ selectButton.addEventListener('click', () => {
     const userChoice = document.querySelector('input:checked');
     incrementChoice(userChoice.value);
     generateChoices(rawSurveyOptions);
-
+    questions++;
+    
     if (questions > 25) {
         location.replace('../result-page/result-page.html');
     }

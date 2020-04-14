@@ -4,6 +4,7 @@ export const incrementChoice = (value) => {
     for (let i = 0; i < parsedResultsArray.length; i++) {
         if (parsedResultsArray[i].name === value) {
             parsedResultsArray[i].numSelected++;
+            parsedResultsArray[i].totalSelected++;
             break;
         }
     }
