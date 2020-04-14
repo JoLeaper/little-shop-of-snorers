@@ -34,7 +34,7 @@ const rawSurveyOptions = [
     {
         id: 5,
         name: 'breakfast',
-        image: '../assets/breaksfast.jpg',
+        image: '../assets/breakfast.jpg',
         timesChosen: 0,
         timesSeen: 0
 
@@ -57,8 +57,8 @@ const rawSurveyOptions = [
     },
     {
         id: 8,
-        name: 'cthulu',
-        image: '../assets/cthulu.jpg',
+        name: 'cthulhu',
+        image: '../assets/cthulhu.jpg',
         timesChosen: 0,
         timesSeen: 0
 
@@ -90,7 +90,7 @@ const rawSurveyOptions = [
     {
         id: 12,
         name: 'pet-sweep',
-        image: '../assets/scissors.jpg',
+        image: '../assets/pet-sweep.jpg',
         timesChosen: 0,
         timesSeen: 0
 
@@ -106,7 +106,7 @@ const rawSurveyOptions = [
     {
         id: 14,
         name: 'shark',
-        image: '../assets/bag.sweep.png',
+        image: '../assets/shark.jpg',
         timesChosen: 0,
         timesSeen: 0
 
@@ -114,7 +114,7 @@ const rawSurveyOptions = [
     {
         id: 15,
         name: 'sweep',
-        image: '../assets/sweep.jpg',
+        image: '../assets/sweep.png',
         timesChosen: 0,
         timesSeen: 0
 
