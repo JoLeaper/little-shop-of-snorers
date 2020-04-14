@@ -6,4 +6,4 @@ export const checkResultsArray = (array, object) => {
         }
     }
     return inArray;
-}
+};

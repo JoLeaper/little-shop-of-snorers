@@ -20,7 +20,7 @@ export const generateChoices = (array) => {
             i--;
         } else {
             addToResult(array[number]);
-            options[i].value = array[number].id;
+            options[i].value = array[number].name;
             images[i].src = array[number].image;
             choices.push(number);
         }
