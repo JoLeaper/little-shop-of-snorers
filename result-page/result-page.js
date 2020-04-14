@@ -17,7 +17,9 @@ parsedResults.forEach(item => {
 });
 
 var ctx = document.getElementById('result-graph').getContext('2d');
+/* eslint-disable */
 var myChart = new Chart(ctx, {
+/* eslint-enable */
     type: 'bar',
     data: {
         labels: labels,
