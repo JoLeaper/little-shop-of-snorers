@@ -17,9 +17,9 @@ const choicesToString = JSON.stringify(choices);
 localStorage.setItem('NO-DUPS', choicesToString);
 
 export const generateChoices = (array) => {
-    let stringyChoices = localStorage.getItem('NO-DUPS');
-    let parsedChoices = JSON.parse(stringyChoices);
     for (let i = 0; i < 3; i++) {
+        let stringyChoices = localStorage.getItem('NO-DUPS');
+        let parsedChoices = JSON.parse(stringyChoices);
         let number = randomSelect();
         if (checkIfUsed(number, parsedChoices) === true) {
             i--;
@@ -28,8 +28,10 @@ export const generateChoices = (array) => {
             options[i].value = array[number].name;
             images[i].src = array[number].image;
             parsedChoices.splice(i, 1, number);
+            
+            let alreadySelectedOptions = JSON.stringify(parsedChoices);
+            localStorage.setItem('NO-DUPS', alreadySelectedOptions);
+
         }
     }
-    let alreadySelectedOptions = JSON.stringify(parsedChoices);
-    localStorage.setItem('NO-DUPS', alreadySelectedOptions);
 };
