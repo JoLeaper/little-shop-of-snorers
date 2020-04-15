@@ -4,11 +4,13 @@ export const randomSelect = () => {
 
 export const checkIfUsed = (number, array1, array2) => {
     let used = false;
-    array1.forEach((numInArray) => {
-        if (number === numInArray) {
-            used = true;
-        }
-    });
+    if (array1) {
+        array1.forEach((numInArray) => {
+            if (number === numInArray) {
+                used = true;
+            }
+        });
+    }
 
     array2.forEach((numInArray) => {
         if (number === numInArray) {

@@ -1,11 +1,10 @@
-import { checkResultsArray } from './check-results.js';
+import { checkArray } from './check-results.js';
 
 export const addToResult = (object) => {
     const stringyResultsArray = localStorage.getItem('RESULTS');
     const parsedResultsArray = JSON.parse(stringyResultsArray);
 
-
-    if (checkResultsArray(parsedResultsArray, object) === true) {
+    if (checkArray(parsedResultsArray, object) === true) {
         for (let i = 0; i < parsedResultsArray.length; i++) {
             if (parsedResultsArray[i].name === object.name) {
                 parsedResultsArray[i].numAppearances++;
@@ -19,7 +18,6 @@ export const addToResult = (object) => {
         };
         parsedResultsArray.push(newResult);
     }
-
     const newStringyResultsArray = JSON.stringify(parsedResultsArray);
     localStorage.setItem('RESULTS', newStringyResultsArray);
 };
